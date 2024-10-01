@@ -1,0 +1,10 @@
+C:\Users\57304\Desktop\POO\POO\obj\Debug\POO.csproj.AssemblyReference.cache
+C:\Users\57304\Desktop\POO\POO\obj\Debug\POO.Form1.resources
+C:\Users\57304\Desktop\POO\POO\obj\Debug\POO.csproj.GenerateResource.cache
+C:\Users\57304\Desktop\POO\POO\bin\Debug\POO.exe.config
+C:\Users\57304\Desktop\POO\POO\bin\Debug\POO.exe
+C:\Users\57304\Desktop\POO\POO\bin\Debug\POO.pdb
+C:\Users\57304\Desktop\POO\POO\obj\Debug\POO.Properties.Resources.resources
+C:\Users\57304\Desktop\POO\POO\obj\Debug\POO.csproj.CoreCompileInputs.cache
+C:\Users\57304\Desktop\POO\POO\obj\Debug\POO.exe
+C:\Users\57304\Desktop\POO\POO\obj\Debug\POO.pdb
