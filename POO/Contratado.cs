@@ -40,5 +40,6 @@ namespace POO
         {
             return pcFechaFinContrato;
         }
+
     }
 }

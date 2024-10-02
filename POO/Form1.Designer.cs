@@ -41,21 +41,24 @@
             this.lblModelo = new System.Windows.Forms.Label();
             this.txtPotenciaCaballos = new System.Windows.Forms.TextBox();
             this.gbProfesor = new System.Windows.Forms.GroupBox();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.txtApellidos = new System.Windows.Forms.TextBox();
-            this.lblCedula = new System.Windows.Forms.Label();
-            this.txtDedicacion = new System.Windows.Forms.TextBox();
-            this.lblApellidos = new System.Windows.Forms.Label();
-            this.txtInicioContrato = new System.Windows.Forms.TextBox();
-            this.lblDedicacion = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblAniosServicio = new System.Windows.Forms.Label();
-            this.txtCedula = new System.Windows.Forms.TextBox();
-            this.lblFechaFin = new System.Windows.Forms.Label();
-            this.txtFinContrato = new System.Windows.Forms.TextBox();
-            this.lblFechaInicio = new System.Windows.Forms.Label();
-            this.txtAniosServicio = new System.Windows.Forms.TextBox();
+            this.btnListar = new System.Windows.Forms.Button();
+            this.btnEliminarProfesor = new System.Windows.Forms.Button();
+            this.btnModificarProfesor = new System.Windows.Forms.Button();
             this.btnAceptarProfesor = new System.Windows.Forms.Button();
+            this.lblAniosServicio = new System.Windows.Forms.Label();
+            this.txtAniosServicio = new System.Windows.Forms.TextBox();
+            this.lblFechaFin = new System.Windows.Forms.Label();
+            this.txtInicio = new System.Windows.Forms.TextBox();
+            this.lblFechaInicio = new System.Windows.Forms.Label();
+            this.txtFinContrato = new System.Windows.Forms.TextBox();
+            this.lblDedicacion = new System.Windows.Forms.Label();
+            this.txtDedicacion = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblCedula = new System.Windows.Forms.Label();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.lblApellidos = new System.Windows.Forms.Label();
+            this.txtCedula = new System.Windows.Forms.TextBox();
             this.gbCarro.SuspendLayout();
             this.gbProfesor.SuspendLayout();
             this.SuspendLayout();
@@ -174,21 +177,24 @@
             // gbProfesor
             // 
             this.gbProfesor.BackColor = System.Drawing.SystemColors.Control;
+            this.gbProfesor.Controls.Add(this.btnListar);
+            this.gbProfesor.Controls.Add(this.btnEliminarProfesor);
+            this.gbProfesor.Controls.Add(this.btnModificarProfesor);
             this.gbProfesor.Controls.Add(this.btnAceptarProfesor);
             this.gbProfesor.Controls.Add(this.lblAniosServicio);
-            this.gbProfesor.Controls.Add(this.txtCedula);
-            this.gbProfesor.Controls.Add(this.lblFechaFin);
-            this.gbProfesor.Controls.Add(this.txtFinContrato);
-            this.gbProfesor.Controls.Add(this.lblFechaInicio);
             this.gbProfesor.Controls.Add(this.txtAniosServicio);
+            this.gbProfesor.Controls.Add(this.lblFechaFin);
+            this.gbProfesor.Controls.Add(this.txtInicio);
+            this.gbProfesor.Controls.Add(this.lblFechaInicio);
+            this.gbProfesor.Controls.Add(this.txtFinContrato);
             this.gbProfesor.Controls.Add(this.lblDedicacion);
-            this.gbProfesor.Controls.Add(this.txtNombre);
-            this.gbProfesor.Controls.Add(this.lblNombre);
-            this.gbProfesor.Controls.Add(this.txtApellidos);
-            this.gbProfesor.Controls.Add(this.lblCedula);
             this.gbProfesor.Controls.Add(this.txtDedicacion);
+            this.gbProfesor.Controls.Add(this.lblNombre);
+            this.gbProfesor.Controls.Add(this.txtNombre);
+            this.gbProfesor.Controls.Add(this.lblCedula);
+            this.gbProfesor.Controls.Add(this.txtApellidos);
             this.gbProfesor.Controls.Add(this.lblApellidos);
-            this.gbProfesor.Controls.Add(this.txtInicioContrato);
+            this.gbProfesor.Controls.Add(this.txtCedula);
             this.gbProfesor.Location = new System.Drawing.Point(12, 205);
             this.gbProfesor.Name = "gbProfesor";
             this.gbProfesor.Size = new System.Drawing.Size(455, 199);
@@ -196,69 +202,45 @@
             this.gbProfesor.TabStop = false;
             this.gbProfesor.Text = "Profesor";
             // 
-            // lblNombre
+            // btnListar
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(6, 32);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(51, 13);
-            this.lblNombre.TabIndex = 6;
-            this.lblNombre.Text = "*Nombre:";
+            this.btnListar.Location = new System.Drawing.Point(379, 158);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(65, 24);
+            this.btnListar.TabIndex = 19;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
-            // txtApellidos
+            // btnEliminarProfesor
             // 
-            this.txtApellidos.Location = new System.Drawing.Point(98, 25);
-            this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(100, 20);
-            this.txtApellidos.TabIndex = 1;
+            this.btnEliminarProfesor.Location = new System.Drawing.Point(205, 159);
+            this.btnEliminarProfesor.Name = "btnEliminarProfesor";
+            this.btnEliminarProfesor.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminarProfesor.TabIndex = 18;
+            this.btnEliminarProfesor.Text = "Eliminar";
+            this.btnEliminarProfesor.UseVisualStyleBackColor = true;
+            this.btnEliminarProfesor.Click += new System.EventHandler(this.btnEliminarProfesor_Click);
             // 
-            // lblCedula
+            // btnModificarProfesor
             // 
-            this.lblCedula.AutoSize = true;
-            this.lblCedula.Location = new System.Drawing.Point(6, 90);
-            this.lblCedula.Name = "lblCedula";
-            this.lblCedula.Size = new System.Drawing.Size(44, 13);
-            this.lblCedula.TabIndex = 8;
-            this.lblCedula.Text = "*Cédula";
+            this.btnModificarProfesor.Location = new System.Drawing.Point(114, 159);
+            this.btnModificarProfesor.Name = "btnModificarProfesor";
+            this.btnModificarProfesor.Size = new System.Drawing.Size(75, 23);
+            this.btnModificarProfesor.TabIndex = 17;
+            this.btnModificarProfesor.Text = "Modificar";
+            this.btnModificarProfesor.UseVisualStyleBackColor = true;
+            this.btnModificarProfesor.Click += new System.EventHandler(this.btnModificarProfesor_Click);
             // 
-            // txtDedicacion
+            // btnAceptarProfesor
             // 
-            this.txtDedicacion.Location = new System.Drawing.Point(98, 57);
-            this.txtDedicacion.Name = "txtDedicacion";
-            this.txtDedicacion.Size = new System.Drawing.Size(100, 20);
-            this.txtDedicacion.TabIndex = 2;
-            // 
-            // lblApellidos
-            // 
-            this.lblApellidos.AutoSize = true;
-            this.lblApellidos.Location = new System.Drawing.Point(6, 60);
-            this.lblApellidos.Name = "lblApellidos";
-            this.lblApellidos.Size = new System.Drawing.Size(56, 13);
-            this.lblApellidos.TabIndex = 7;
-            this.lblApellidos.Text = "*Apellidos:";
-            // 
-            // txtInicioContrato
-            // 
-            this.txtInicioContrato.Location = new System.Drawing.Point(98, 90);
-            this.txtInicioContrato.Name = "txtInicioContrato";
-            this.txtInicioContrato.Size = new System.Drawing.Size(100, 20);
-            this.txtInicioContrato.TabIndex = 5;
-            // 
-            // lblDedicacion
-            // 
-            this.lblDedicacion.AutoSize = true;
-            this.lblDedicacion.Location = new System.Drawing.Point(6, 124);
-            this.lblDedicacion.Name = "lblDedicacion";
-            this.lblDedicacion.Size = new System.Drawing.Size(68, 13);
-            this.lblDedicacion.TabIndex = 10;
-            this.lblDedicacion.Text = "*Dedicación:";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(98, 124);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 9;
+            this.btnAceptarProfesor.Location = new System.Drawing.Point(19, 159);
+            this.btnAceptarProfesor.Name = "btnAceptarProfesor";
+            this.btnAceptarProfesor.Size = new System.Drawing.Size(75, 23);
+            this.btnAceptarProfesor.TabIndex = 16;
+            this.btnAceptarProfesor.Text = "Incluir";
+            this.btnAceptarProfesor.UseVisualStyleBackColor = true;
+            this.btnAceptarProfesor.Click += new System.EventHandler(this.btnAceptarProfesor_Click);
             // 
             // lblAniosServicio
             // 
@@ -269,12 +251,12 @@
             this.lblAniosServicio.TabIndex = 16;
             this.lblAniosServicio.Text = "Años de servicio:";
             // 
-            // txtCedula
+            // txtAniosServicio
             // 
-            this.txtCedula.Location = new System.Drawing.Point(344, 96);
-            this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(100, 20);
-            this.txtCedula.TabIndex = 15;
+            this.txtAniosServicio.Location = new System.Drawing.Point(344, 96);
+            this.txtAniosServicio.Name = "txtAniosServicio";
+            this.txtAniosServicio.Size = new System.Drawing.Size(100, 20);
+            this.txtAniosServicio.TabIndex = 15;
             // 
             // lblFechaFin
             // 
@@ -285,12 +267,12 @@
             this.lblFechaFin.TabIndex = 14;
             this.lblFechaFin.Text = "Fecha fin contrato:";
             // 
-            // txtFinContrato
+            // txtInicio
             // 
-            this.txtFinContrato.Location = new System.Drawing.Point(344, 29);
-            this.txtFinContrato.Name = "txtFinContrato";
-            this.txtFinContrato.Size = new System.Drawing.Size(100, 20);
-            this.txtFinContrato.TabIndex = 11;
+            this.txtInicio.Location = new System.Drawing.Point(344, 29);
+            this.txtInicio.Name = "txtInicio";
+            this.txtInicio.Size = new System.Drawing.Size(100, 20);
+            this.txtInicio.TabIndex = 11;
             // 
             // lblFechaInicio
             // 
@@ -301,22 +283,76 @@
             this.lblFechaInicio.TabIndex = 13;
             this.lblFechaInicio.Text = "Fecha Ingreso:";
             // 
-            // txtAniosServicio
+            // txtFinContrato
             // 
-            this.txtAniosServicio.Location = new System.Drawing.Point(344, 62);
-            this.txtAniosServicio.Name = "txtAniosServicio";
-            this.txtAniosServicio.Size = new System.Drawing.Size(100, 20);
-            this.txtAniosServicio.TabIndex = 12;
+            this.txtFinContrato.Location = new System.Drawing.Point(344, 62);
+            this.txtFinContrato.Name = "txtFinContrato";
+            this.txtFinContrato.Size = new System.Drawing.Size(100, 20);
+            this.txtFinContrato.TabIndex = 12;
             // 
-            // btnAceptarProfesor
+            // lblDedicacion
             // 
-            this.btnAceptarProfesor.Location = new System.Drawing.Point(182, 161);
-            this.btnAceptarProfesor.Name = "btnAceptarProfesor";
-            this.btnAceptarProfesor.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptarProfesor.TabIndex = 16;
-            this.btnAceptarProfesor.Text = "Enviar";
-            this.btnAceptarProfesor.UseVisualStyleBackColor = true;
-            this.btnAceptarProfesor.Click += new System.EventHandler(this.btnAceptarProfesor_Click);
+            this.lblDedicacion.AutoSize = true;
+            this.lblDedicacion.Location = new System.Drawing.Point(6, 124);
+            this.lblDedicacion.Name = "lblDedicacion";
+            this.lblDedicacion.Size = new System.Drawing.Size(68, 13);
+            this.lblDedicacion.TabIndex = 10;
+            this.lblDedicacion.Text = "*Dedicación:";
+            // 
+            // txtDedicacion
+            // 
+            this.txtDedicacion.Location = new System.Drawing.Point(98, 124);
+            this.txtDedicacion.Name = "txtDedicacion";
+            this.txtDedicacion.Size = new System.Drawing.Size(100, 20);
+            this.txtDedicacion.TabIndex = 9;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(6, 32);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(51, 13);
+            this.lblNombre.TabIndex = 6;
+            this.lblNombre.Text = "*Nombre:";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(98, 25);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.TabIndex = 1;
+            // 
+            // lblCedula
+            // 
+            this.lblCedula.AutoSize = true;
+            this.lblCedula.Location = new System.Drawing.Point(6, 90);
+            this.lblCedula.Name = "lblCedula";
+            this.lblCedula.Size = new System.Drawing.Size(44, 13);
+            this.lblCedula.TabIndex = 8;
+            this.lblCedula.Text = "*Cédula";
+            // 
+            // txtApellidos
+            // 
+            this.txtApellidos.Location = new System.Drawing.Point(98, 57);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(100, 20);
+            this.txtApellidos.TabIndex = 2;
+            // 
+            // lblApellidos
+            // 
+            this.lblApellidos.AutoSize = true;
+            this.lblApellidos.Location = new System.Drawing.Point(6, 60);
+            this.lblApellidos.Name = "lblApellidos";
+            this.lblApellidos.Size = new System.Drawing.Size(56, 13);
+            this.lblApellidos.TabIndex = 7;
+            this.lblApellidos.Text = "*Apellidos:";
+            // 
+            // txtCedula
+            // 
+            this.txtCedula.Location = new System.Drawing.Point(98, 90);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(100, 20);
+            this.txtCedula.TabIndex = 5;
             // 
             // Form1
             // 
@@ -352,20 +388,23 @@
         private System.Windows.Forms.Button btnEnviarCarro;
         private System.Windows.Forms.GroupBox gbProfesor;
         private System.Windows.Forms.Label lblAniosServicio;
-        private System.Windows.Forms.TextBox txtCedula;
-        private System.Windows.Forms.Label lblFechaFin;
-        private System.Windows.Forms.TextBox txtFinContrato;
-        private System.Windows.Forms.Label lblFechaInicio;
         private System.Windows.Forms.TextBox txtAniosServicio;
+        private System.Windows.Forms.Label lblFechaFin;
+        private System.Windows.Forms.TextBox txtInicio;
+        private System.Windows.Forms.Label lblFechaInicio;
+        private System.Windows.Forms.TextBox txtFinContrato;
         private System.Windows.Forms.Label lblDedicacion;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.TextBox txtApellidos;
-        private System.Windows.Forms.Label lblCedula;
         private System.Windows.Forms.TextBox txtDedicacion;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lblCedula;
+        private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.Label lblApellidos;
-        private System.Windows.Forms.TextBox txtInicioContrato;
+        private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.Button btnAceptarProfesor;
+        private System.Windows.Forms.Button btnEliminarProfesor;
+        private System.Windows.Forms.Button btnModificarProfesor;
+        private System.Windows.Forms.Button btnListar;
     }
 }
 
